@@ -1,0 +1,178 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+
+{% comment %} <style>
+    img {
+        max-width: 100%;
+        height: auto;
+        width: auto\9; /* ie8 */
+        padding-top: 1%;
+    }
+</style> {% endcomment %}
+{% endblock style %}
+
+{% block content %}
+<!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img src="{% static 'images/logok.jpg' %}" alt="" height="60"/>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">About </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="/about-overview">Overview </a>
+								<a class="dropdown-item" href="/about-infrastructure">Infrastructure </a>
+								<a class="dropdown-item" href="/about-management">Administration </a>
+                                <a class="dropdown-item" href="/about-campuslife">Campus Life </a>
+								<a class="dropdown-item" href="/about-gallery">Gallery </a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Academics </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="/academics-overview">Overview </a>
+								<a class="dropdown-item" href="/academics-board">Board Affiliation </a>
+								<a class="dropdown-item" href="/academics-subjects">Subjects </a>
+							</div>
+						</li>
+						<li class="nav-item active dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Facilities </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="/general">General </a>
+								<a class="dropdown-item" href="/laboratory">Laboratory </a>
+								<a class="dropdown-item" href="/sports">Sports </a>
+								<a class="dropdown-item" href="/hostel">Hostel </a>
+                                <a class="dropdown-item" href="/bus">Bus </a>
+							</div>
+						</li>
+						{% comment %} <li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Values </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="course-grid-2.html">Value Based Education </a>
+								<a class="dropdown-item" href="course-grid-3.html">Well-Being and Nutrition </a>
+								<a class="dropdown-item" href="course-grid-4.html">Knowledge Park </a>
+							</div>
+						</li> {% endcomment %}
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Admissions </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="/admission-procedure">Admission Procedure </a>
+								<a class="dropdown-item" href="/required-documentation">Required Documentation </a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Parent Zone </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="/parent-feedback">Parent Feedback </a>
+								<a class="dropdown-item" href="/FAQ">FAQ </a>
+								<a class="dropdown-item" href="/know-your-child">Know Your Child </a>
+							</div>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="/career-zone">Career Zone</a></li>
+						<li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header --> 
+
+<div id="carouselExampleControls" class="carousel slide bs-slider box-slider" data-ride="carousel" data-pause="hover" data-interval="false" >
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleControls" data-slide-to="1"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="carousel-item active">
+				<div id="home" class="first-section" style="background-image:url({% static 'images/field.jpg' %});">
+				</div><!-- end section -->
+			</div>
+			<div class="carousel-item">
+				<div id="home" class="first-section" style="background-image:url({% static 'images/field3.jpg' %});">
+				</div><!-- end section -->
+			</div>
+			<!-- Left Control -->
+			<a class="new-effect carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				<span class="fa fa-angle-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+
+			<!-- Right Control -->
+			<a class="new-effect carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+				<span class="fa fa-angle-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+
+  <div id="overviews" class="section wb">
+        <div class="container">
+
+
+
+        <p style="padding:3vw 0; text-align:justify; font-size:18px">
+            The sports academy at <span style="color:#0000FF">SKIRS</span> is a natural extension of the all-round development motto promoted by the school. Physical Education is given due importance to enhance and nourish the multi benefits of sports like a healthy body, sound mind, emotional stability, mental agility, social and moral values like integrity, honesty, gamesmanship, team spirit and winning attitude. <br><br> <span style="color:#0000FF">SKIRS</span> sports academy also aims to build a pool of sporting talent and provides for specialized coaching by qualified coaches for many indoor and outdoor games and sports. It is well-equipped with outdoor fields and indoor sports complex and a modern multi gymnasium for physical fitness and mental conditioning.
+        </p>
+
+        <div class="row">
+            <div class="col-md-5">
+                <h3 class="text-left" style="color:#0000FF; font-size:20px"><span style="color:#0000FF">SKIRS</span> SPORTS FEATURES </h3>
+                <p class="text-left" style="font-size:16px"><span style="color:#0000FF">SKIRS</span> Sports Academy trains individuals with an opportunity to compete at state, zonal and national events in sports such as</p> <br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="text-left styling-list">
+                            <li>Cricket</li>
+                            <li>Football</li>
+                            <li>Lawn Tennis</li>
+                            <li>Basket Ball</li>
+                            <li>Volley Ball</li>
+                            <li>Skating</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="text-left styling-list">
+                            <li>Swimming</li>
+                            <li>Martial Arts</li>
+                            <li>Yoga &#038; Meditation</li>
+                            <li>Table Tennis/ Chess/ Carrom</li>
+                            <li>Hockey</li>
+                            <li>Billiards</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-5">
+                <h3 class="text-left" style="color:#0000FF; font-size:20px"><span style="color:#0000FF">SKIRS</span> SPORTS OBJECTIVES </h3>
+                <p class="text-left" style="font-size:16px">The <span style="color:#0000FF">SKIRS</span> Sports academy has clear defined objectives to function both as a support entity to engage students in physical education and also to create a pool of sporting talent.</p>
+                <ul class="text-left styling-list">
+                    <li>To create awareness of the importance of Sports.</li>
+                    <li>To provide all- round development of the child.</li>
+                    <li>To enhance character building and ethics through sports.</li>
+                    <li>To inculcate leadership qualities and promote team-spirit.</li>
+                    <li>To provide world-class infrastructure and intensive training facilities.</li>
+                    <li>To provide sports event management training program.</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    
+
+{% endblock content %}

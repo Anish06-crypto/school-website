@@ -1,0 +1,227 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img src="{% static 'images/logok.jpg' %}" alt="" height="60"/>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">About </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="/about-overview">Overview </a>
+								<a class="dropdown-item" href="/about-infrastructure">Infrastructure </a>
+								<a class="dropdown-item" href="/about-management">Administration </a>
+                                <a class="dropdown-item" href="/about-campuslife">Campus Life </a>
+								<a class="dropdown-item" href="/about-gallery">Gallery </a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Academics </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="/academics-overview">Overview </a>
+								<a class="dropdown-item" href="/academics-board">Board Affiliation </a>
+								<a class="dropdown-item" href="/academics-subjects">Subjects </a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Facilities </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="/general">General </a>
+								<a class="dropdown-item" href="/laboratory">Laboratory </a>
+								<a class="dropdown-item" href="/sports">Sports </a>
+								<a class="dropdown-item" href="/hostel">Hostel </a>
+                                <a class="dropdown-item" href="/bus">Bus </a>
+							</div>
+						</li>
+						{% comment %} <li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Values </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="course-grid-2.html">Value Based Education </a>
+								<a class="dropdown-item" href="course-grid-3.html">Well-Being and Nutrition </a>
+								<a class="dropdown-item" href="course-grid-4.html">Knowledge Park </a>
+							</div>
+						</li> {% endcomment %}
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Admissions </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="/admission-procedure">Admission Procedure </a>
+								<a class="dropdown-item" href="/required-documentation">Required Documentation </a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Parent Zone </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="/parent-feedback">Parent Feedback </a>
+								<a class="dropdown-item" href="/FAQ">FAQ </a>
+								<a class="dropdown-item" href="/know-your-child">Know Your Child </a>
+							</div>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="/career-zone">Career Zone</a></li>
+						<li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+	<div id="carouselExampleControls" class="carousel slide bs-slider box-slider" data-ride="carousel" data-pause="hover" data-interval="false" >
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleControls" data-slide-to="1"></li>
+			<li data-target="#carouselExampleControls" data-slide-to="2"></li>
+			<li data-target="#carouselExampleControls" data-slide-to="3"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="carousel-item active">
+				<div id="home" class="first-section" style="background-image:url({{ image1.image1.url }});">
+					<div class="dtab">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 col-sm-12 text-right">
+									<div class="big-tagline">
+										<h2 style="font-size:80px; background-color:black; border-radius: 1rem; opacity: 0.8;"><strong><b><center>SHREE KEERTHANA INTERNATIONAL RESIDENTIAL SCHOOL</center> </b></strong></h2>
+										{% comment %} <p class="lead">With Landigoo responsive landing page template, you can promote your all hosting, domain and email services. </p> {% endcomment %}
+											<br>
+											<a href="/contact" class="hover-btn-new"><span>Contact Us</span></a>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											<a href="#overviews" class="hover-btn-new"><span>Read More</span></a>
+									</div>
+								</div>
+							</div><!-- end row -->            
+						</div><!-- end container -->
+					</div>
+				</div><!-- end section -->
+			</div>
+			<div class="carousel-item">
+				<div id="home" class="first-section" style="background-image:url({{ image2.image2.url }});">
+					<div class="dtab">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 col-sm-12 text-left">
+									<div class="big-tagline">
+										<h2 data-animation="animated zoomInRight">Education <strong>at its best!</strong></h2>
+										{% comment %} <p class="lead" data-animation="animated fadeInLeft">With Landigoo responsive landing page template, you can promote your all hosting, domain and email services. </p> {% endcomment %}
+											<a href="/contact" class="hover-btn-new"><span>Contact Us</span></a>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											<a href="#overviews" class="hover-btn-new"><span>Read More</span></a>
+									</div>
+								</div>
+							</div><!-- end row -->            
+						</div><!-- end container -->
+					</div>
+				</div><!-- end section -->
+			</div>
+			<div class="carousel-item">
+				<div id="home" class="first-section" style="background-image:url({{ image3.image3.url }});">
+					<div class="dtab">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 col-sm-12 text-center">
+									<div class="big-tagline">
+										<h2 data-animation="animated zoomInRight"><strong>Browse</strong> Through</h2>
+										{% comment %} <p class="lead" data-animation="animated fadeInLeft">1 IP included with each server 
+											Your Choice of any OS (CentOS, Windows, Debian, Fedora)
+											FREE Reboots</p> {% endcomment %}
+											<a href="/contact" class="hover-btn-new"><span>Contact Us</span></a>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											<a href="#overviews" class="hover-btn-new"><span>Read More</span></a>
+									</div>
+								</div>
+							</div><!-- end row -->            
+						</div><!-- end container -->
+					</div>
+				</div><!-- end section -->
+			</div>
+			<div class="carousel-item">
+				<div id="home" class="first-section" style="background-image:url({{ image4.image4.url }});">
+					<div class="dtab">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 col-sm-12 text-center">
+									<div class="big-tagline">
+										{% comment %} <h2 data-animation="animated zoomInRight"><strong>Browse</strong> Through</h2> {% endcomment %}
+										{% comment %} <p class="lead" data-animation="animated fadeInLeft">1 IP included with each server 
+											Your Choice of any OS (CentOS, Windows, Debian, Fedora)
+											FREE Reboots</p> {% endcomment %}
+											{% comment %} <a href="/contact" class="hover-btn-new"><span>Contact Us</span></a>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											<a href="#overviews" class="hover-btn-new"><span>Read More</span></a> {% endcomment %}
+									</div>
+								</div>
+							</div><!-- end row -->            
+						</div><!-- end container -->
+					</div>
+				</div><!-- end section -->
+			</div>
+			<!-- Left Control -->
+			<a class="new-effect carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				<span class="fa fa-angle-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+
+			<!-- Right Control -->
+			<a class="new-effect carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+				<span class="fa fa-angle-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+	
+<div id="overviews" class="section wb">
+    <div class="container">
+		<h2><strong>News and Events</strong></h2>
+		{% if news %}
+            {% for new in news %}
+			
+				<ul class="list-group">
+					<a href="{% url 'news' new.pk %}"><li style="background-color:#eea412; color:black;" class="list-group-item d-flex justify-content-between align-items-center">
+						{{ new.title }}
+						<h3><span class="badge badge-primary badge-pill">{{ new.date_created }}</span></h3>
+					</li></a> 
+				</ul>
+			
+			{% endfor %}
+		{% endif %}
+    </div><!-- end container -->
+</div><!-- end section -->
+
+	<div class="container">
+            <div class="section text-left">
+                <h3 style="color:#77adc7">Public Disclosure</h3>
+            </div>
+
+            <!-- <h3 style="color:#77adc7" class="text-left">AGE CRITERION </h3> -->
+            <ul class="text-left styling-list home-public-disclosure">
+                <li> <a href="" style="color: #333"><b>Affiliation Letter</b></a> </li>
+                <li><a href="{% static 'documents/trustee.pdf' %}" style="color: #333"><b>Institution Trust Deed</b></a></li>
+                <li><a href="{% static 'documents/no_objection.pdf' %}" style="color: #333"><b>No Objection Certificate</b></a></li>
+                <li><a href="RTE-certificate.pdf" style="color: #333"><b>Recognition Certificate Under RTE Act</b></a></li>
+                <li><a href="{% static 'documents/building_safety.pdf' %}" style="color: #333"><b>Building Safety Certificate</b></a></li>
+                <li><a href="{% static 'documents/fire_safety.pdf' %}" style="color: #333"><b>Fire Safety Certificate</b></a></li>
+                <li><a href="DEO-certificate.pdf" style="color: #333"><b>DEO Certificate</b></a></li>
+                <li><a href="{% static 'documents/water_and_sanitation.pdf' %}" style="color: #333"><b>Water,Health & Sanitation Certificate</b></a></li>
+                <li><a href="fee-structure.pdf" style="color: #333"><b>Fee Structure of the School</b></a></li>
+                <li><a href="annual-academic-calender.pdf" style="color: #333"><b>Annual Academic Calender</b></a></li>
+                <li><a href="management-committee.pdf" style="color: #333"><b>List of School Management Committee</b></a></li>
+                <li><a href="parent-teachers-association.pdf" style="color: #333"><b>List of Parent Teachers Association</b></a></li>
+                <li><a href="result-sheet.pdf" style="color: #333"><b>Last Three-Year Result of the Board Examination as per Applicability</b></a></li>
+                <li><a href="CBSE-mandatory-public-disclosure.pdf" style="color: #333"><b>CBSE Mandatory Public Disclosure</b></a></li>
+            </ul>
+        </div>
+
+{% endblock content %}

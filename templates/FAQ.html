@@ -1,0 +1,166 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+
+{% comment %} <style>
+    img {
+        max-width: 90%;
+        height: auto;
+        width: auto\9; /* ie8 */
+        padding-left: 5%;
+        padding-top: 0.5%;
+    }
+</style> {% endcomment %}
+{% endblock style %}
+
+{% block content %}
+<!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img src="{% static 'images/logok.jpg' %}" alt="" height="60"/>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">About </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="/about-overview">Overview </a>
+								<a class="dropdown-item" href="/about-infrastructure">Infrastructure </a>
+								<a class="dropdown-item" href="/about-management">Administration </a>
+                                <a class="dropdown-item" href="/about-campuslife">Campus Life </a>
+								<a class="dropdown-item" href="/about-gallery">Gallery </a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Academics </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="/academics-overview">Overview </a>
+								<a class="dropdown-item" href="/academics-board">Board Affiliation </a>
+								<a class="dropdown-item" href="/academics-subjects">Subjects </a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Facilities </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="/general">General </a>
+								<a class="dropdown-item" href="/laboratory">Laboratory </a>
+								<a class="dropdown-item" href="/sports">Sports </a>
+								<a class="dropdown-item" href="/hostel">Hostel </a>
+                                <a class="dropdown-item" href="/bus">Bus </a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Values </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="course-grid-2.html">Value Based Education </a>
+								<a class="dropdown-item" href="course-grid-3.html">Well-Being and Nutrition </a>
+								<a class="dropdown-item" href="course-grid-4.html">Knowledge Park </a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Admissions </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="/admission-procedure">Admission Procedure </a>
+								<a class="dropdown-item" href="/required-documentation">Required Documentation </a>
+							</div>
+						</li>
+						<li class="nav-item active dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Parent Zone </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="/parent-feedback">Parent Feedback </a>
+								<a class="dropdown-item" href="/FAQ">FAQ </a>
+								<a class="dropdown-item" href="/know-your-child">Know Your Child </a>
+							</div>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="/career-zone">Career Zone</a></li>
+						<li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+
+    <div class="container"> 
+        <img src="{% static 'images/142468.jpg' %}" alt="">
+
+     <article class="static-page text-left" style="padding:3vw 0">   <h3> <strong>General</strong></h3> <br>
+
+                        <h4>1. Why a Residential School?</h4>
+                        <p>Sree Keerthana International Residential School is an International Co-educational boarding school for children from far and wide. It is an ideal place for student to spend their learning foundation years at SKIRS, before they face fortune in a fast changing world.</p>
+                        <p><span>At SKIRS, students are exposed to rich heritage and grandeur of the country and to value care instead of neglect and above all to experience a spirit of generosity and tolerant broad mindedness.</span></p>
+                        <p>The knowledge of the young minds of the children is in our care and it is our duty to give holistic development of the child and provide them value-aided education. This is where quality Residential Schools offer good multi-platform for developing his/her personality and leadership traits.</p> <br>
+
+                        <h4>2. What is the right age for the child to join a Residential School?</h4>
+                        <p><span>The right age for children to join residential school is 7years; wherein the child has developed the sense of responsibility and self-confidence and has the ability to handle testing situations.</span></p> <br>
+
+                        <h4>3. Will the child at hostel lose love for parents?</h4>
+                                        <p><span>Children understand the value of parental love only when they are away from them. Due to busy lifestyle and family commitment parents are unable to spend quality time with the children which results in neglect and lack of grooming ethics. In a hostel the child realizes the true value towards his parent and thus bonding gets more strengthened.</span></p> <br>
+
+                        <h4>4. What are the special features of SKIRS?</h4>
+                        <p><span>SKIRS is spread to 25 acres of land. It is the commitment of SKIRS to present to the young generation a world-class Educational center, where the child can receive the most sophisticated education on a solid foundation to face the global economy.</span></p>
+                        <p><span>SKIRS is Bangalore based, Internationally bench marked learning Institution from Primary to Senior Secondary School established by the AKASH EDUCATION TRUST. A dedicated group of professionals committed to Education and the learning community. The school is positioned for a dynamically changing India. Innovative teaching methods by well-trained experienced teachers, inspires children to make their learning enjoyable. Excellent sports facilities for cricket, hockey, football, basket ball, volley ball, tennis, badminton, swimming, gymnasium etc. Yoga and meditation to improve their concentration, memory and spiritual quotient which ensures healthy mind and body.</span></p> <br>
+
+                        <h4>5. In what way is SKIRS different from other schools?</h4>
+                        <p><span>SKIRS concentrate on academic excellence and character building along with the right attitudinal change to develop in them the sense of service to others. SKIRS emphasis on our Indian culture and practice noble principles like service, non-violence, respect to other religion, living in harmony with nature etc.</span></p> <br>
+
+                        <h4>6. Where is the school located and how to reach?</h4>
+                                        <p><span>SKIRS is located in Prasannahalli road at Devanahalli which is about 5km away from Kempegowda International Airport. It is just a 15minutes drive from Kempegowda International Airport.</span></p>
+                        <p><span>Bangalore is well-connected to the rest of the country by air, rail and road.</span></p> <br><br>
+
+                        <h3><strong>Academics</strong></h3><br>
+
+                        <h4>1. What will be the class strength in each grade?</h4>
+                        <p><span>The class strength will not exceed 20 students in each grade.</span></p> <br>
+
+                        <h4>2. What is teacher-student ratio?</h4>
+                        <p><span>SKIRS has the best and highly accomplished faculty with proven abilities. Few of our teaching and non-teaching staff resides at school itself, where we have quarters at SKIRS campus. This enables them to give more time to their children. They would plan and supervise them after school and extra-curricular activities and look after the general needs of the students. A small class size of 20 students ensures that the staff is able to focus on adequate time and attention to their students.</span></p> <br><br>
+
+                        <h3><strong>Athletics</strong></h3> <br>
+
+                        <h4>1. What are the sports activities at SKIRS?</h4> 
+                        <p><span>SKIRS believes in training the body as much as in training the mind. Excellent facilities are provided for both outdoor and indoor games at the School. Under the watchful eyes of trained coaches and expert personnel, students can exercise at the Gym or take part in any game. The Sports Complex boasts of Athletic track, grounds for tennis, basketball, horse-riding, badminton, aerobics, taekwondo, Olympic standard billiards table, cricket and football ground, International sized six lane track swimming pool, yoga and meditation.</span></p> <br><br>
+
+                        <h3><strong>Student Life</strong></h3> <br>
+
+                        <h4>1. What kind of accommodation and facilities are available?</h4>
+                        <p><span>Well designed and beautifully maintained dormitories perhaps one of the best in our State, separate for boys and girls as spacious and comfortable in separate blocks. It will have adequate supporting staff under the supervision of house master/ mistress. Well cleaned and well maintained sanitary block with 24 hours of hot and cold water supply are designed in each block. The quality given for students in SKIRS is as per International standards.</span></p> <br>
+
+                        <h4>2. What are the catering facilities in SKIRS?</h4>
+                        <p><span>A modern and clean kitchen provides hygienic delicious and wholesome vegetarian food and a separate kitchen for non-vegetarian food too. We have well-trained, qualified and experienced catering staff. The dining area is large and well ventilated and delightfully arranged. The menu is exhaustive and varies everyday with a wide spread in every meal which caters to the taste buds of all and also supplements the children with full nutrition. The menu is a combination of Indian, Chinese and Continental which every child relishes.</span></p>
+                        <p><span>Note: For further queries and feedback, please feel free to visit our SKIRS campus.</span></p> <br><br>
+
+                        <h3><strong>Parents</strong></h3> <br>
+
+                        <h4>1. Which are the grades for which admissions can be sought?</h4>
+
+                        <p>Our curriculum starts from class kindergarten to XII following the guidelines set by IGCSE, ICSE and CBSE.</p> <br>
+
+                        <h4>2. How can I register my ward’s name for admission?</h4>
+                        <p><span>Application form can be either downloaded from the website or picked up from school campus. Filled-in application forms with registration fees and photocopy of the report card of the previous grade to be submitted for the registration.<br />
+                        </span></p> <br>
+
+                        <h4>3. What are the eligibility criterions for admission into SKIRS?</h4>
+                        <p><span>SKIRS would welcome enquiries from parents in India, Non-residential Indians and  Foreign students. Admissions are open from grade Kindergarten to XII only. Entrance test is mandatory so as to understand the child’s knowledge to the subjects.<br />
+                        </span></p> <br>
+
+                        <h4>4. When does the academic session start at SKIRS?</h4>
+                        <p><span>The Academic year starts on 1 week of June and continue up to April in the subsequent year.<br />
+                        </span></p> <br>
+
+                        <h4>5. Whom should I contact for further information?</h4>
+                        <p><span>Administrative Office,<br />Sree Keerthana International Residential School<br />Prasannahalli Road, Devanahalli,<br />Near Kempegowda International Airport,<br />Bangalore-562 110<br />PH: +91-080-27681349<br />Telefax: +91-080-27680100<br />Mob: +91-93798 44449<br />Email: <a href="mailto:akasheducationtrust@gmail.com">akasheducationtrust@gmail.com</a><br />www.akashinternationalschool.com</span></p>
+                    </article>                     
+            </div>
+
+
+{% endblock content %}

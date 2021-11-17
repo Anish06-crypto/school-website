@@ -1,0 +1,170 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+
+{% comment %} <style>
+    img {
+        max-width: 100%;
+        height: auto;
+        width: auto\9; /* ie8 */
+        padding-top: 1%;
+    }
+</style> {% endcomment %}
+{% endblock style %}
+
+{% block content %}
+<!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img src="{% static 'images/logok.jpg' %}" alt="" height="60"/>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+						<li class="nav-item active dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">About </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="/about-overview">Overview </a>
+								<a class="dropdown-item" href="/about-infrastructure">Infrastructure </a>
+								<a class="dropdown-item" href="/about-management">Administration </a>
+                                <a class="dropdown-item" href="/about-campuslife">Campus Life </a>
+								<a class="dropdown-item" href="/about-gallery">Gallery </a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Academics </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="/academics-overview">Overview </a>
+								<a class="dropdown-item" href="/academics-board">Board Affiliation </a>
+								<a class="dropdown-item" href="/academics-subjects">Subjects </a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Facilities </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="/general">General </a>
+								<a class="dropdown-item" href="/laboratory">Laboratory </a>
+								<a class="dropdown-item" href="/sports">Sports </a>
+								<a class="dropdown-item" href="/hostel">Hostel </a>
+                                <a class="dropdown-item" href="/bus">Bus </a>
+							</div>
+						</li>
+						{% comment %} <li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Values </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="course-grid-2.html">Value Based Education </a>
+								<a class="dropdown-item" href="course-grid-3.html">Well-Being and Nutrition </a>
+								<a class="dropdown-item" href="course-grid-4.html">Knowledge Park </a>
+							</div>
+						</li> {% endcomment %}
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Admissions </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="/admission-procedure">Admission Procedure </a>
+								<a class="dropdown-item" href="/required-documentation">Required Documentation </a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Parent Zone </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="/parent-feedback">Parent Feedback </a>
+								<a class="dropdown-item" href="/FAQ">FAQ </a>
+								<a class="dropdown-item" href="/know-your-child">Know Your Child </a>
+							</div>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="/career-zone">Career Zone</a></li>
+						<li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header --> 
+        
+<div id="overviews" class="section wb">
+        <div class="container">
+ <div class="row align-items-center">
+                    <div class="message-box">
+
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+
+                <div class="row"> 
+                {% comment %} <div class="col-lg-6 col-md-6 col-12">
+                    <div class="course-item">
+                        <div class="image-blog">
+                            <img src="{% static 'images/chairman2.jpg' %}" alt="" class="img-fluid">
+                        </div>
+                            <div class="course-title">
+                                 <center><h2>Mrs. Pushpa Muniraju</h2>
+                                <p>Chairperson, SKIRS</p> </center> 
+                            </div>
+                    </div>
+                </div><!-- end col --> {% endcomment %}
+
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="course-item">
+                        <div class="image-blog">
+                            <img src="{% static 'images/chairman.jpg' %}" alt="" class="img-fluid">
+                        </div>
+                            <div class="course-title">
+                               <center><h2>Mr. V Subbanna</h2>
+                                <p>Chairman, SKIRS</p> </center> 
+                            </div>
+                    </div>
+                </div><!-- end col -->  
+            </div><!-- end row -->
+
+            <div class="row"> 
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="course-item">
+                            <div class="course-title">
+                                <h2 style="font-size: 25px">The Best & Beyond</h2>
+                            </div>
+                            <div class="course-desc">
+                                <p style="font-size: 15px">Sree Keerthana International Residential School wish to prepare the children face life better than anyone else. Life skills, Soft skills, behavioural skills and study skills are the part and parcel of regular education in SKIRS. The journey to success has its origin in one’s mind. SKIRS helps encourage the mind open out towards new vistas – the parachute which works only when it is opened.
+
+                                SKIRS teaches the children to rise from the level of watchers to doers and achievers. We wish them evolve as leaders who help guide others towards success. SKIRS instills confidence among its wards and ensure that ‘THINK U CAN’ is the central theme in all their endeavours
+
+                                Akash develops a positive leadership amongst the children who set a positive culture for positive goal to build positive reputation to get positive results lead a positive team which ultimately help them achieve permanent and everlasting world peace.
+
+                                SKIRS ensures all-round development of everyone.</p>
+                            </div>
+                           
+                        </div>
+                </div><!-- end col -->
+
+                {% comment %} <div class="col-lg-6 col-md-6 col-12">
+                    <div class="course-item">
+                            <div class="course-title">
+                                <h2 style="font-size: 25px">The Best & Beyond</h2>
+                            </div>
+                            <div class="course-desc">
+                                <p style="font-size: 15px">Akash International School wish to prepare the children face life better than anyone else. Life skills, Soft skills, behavioural skills and study skills are the part and parcel of regular education in AIS. The journey to success has its origin in one’s mind. AIS helps encourage the mind open out towards new vistas – the parachute which works only when it is opened.
+
+                                AIS teaches the children to rise from the level of watchers to doers and achievers. We wish them evolve as leaders who help guide others towards success. AIS instills confidence among its wards and ensure that ‘THINK U CAN’ is the central theme in all their endeavours
+
+                                Akash develops a positive leadership amongst the children who set a positive culture for positive goal to build positive reputation to get positive results lead a positive team which ultimately help them achieve permanent and everlasting world peace.
+
+                                AIS ensures all-round development of everyone.</p>
+                            </div>    
+                    </div>
+                </div><!-- end col -->   {% endcomment %}
+            </div><!-- end row -->
+            
+            
+				
+
+		</div>
+	</div>
+    
+
+{% endblock content %}
