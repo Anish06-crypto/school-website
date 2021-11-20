@@ -26,7 +26,7 @@ SECRET_KEY = '%zrc^nyc3)*4l(o2cm-j6qup3wugip+w)q&3w0tyif2j**pc(6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['skir-school.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['skir-school.herokuapp.com', '127.0.0.1','www.skirschool.com','skirschool.com']
 
 
 # Application definition
